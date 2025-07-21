@@ -7,95 +7,97 @@
   <style>
     body {
       background: #fff;
-      color: #000;
       font-family: Arial, sans-serif;
       padding: 20px;
-      text-align: center;
+      color: #333;
     }
     h1 {
-      font-size: 40px;
+      text-align: center;
+      color: #000;
       margin-bottom: 5px;
     }
     h2 {
-      font-size: 30px;
-      color: #333;
-      margin-bottom: 20px;
+      text-align: center;
+      color: #444;
+      margin: 5px 0 20px;
+      font-size: 20px;
     }
     .quote {
-      font-size: 24px;
-      color: #000;
+      text-align: center;
+      font-size: 22px;
+      color: #007BFF;
       font-weight: bold;
       margin: 20px 0;
     }
+    .checkbox {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 18px;
+    }
     table {
-      width: 80%;
-      margin: auto;
+      width: 100%;
+      background: #fff;
       border-collapse: collapse;
-      background: #f9f9f9;
+      margin-top: 20px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
+      border: 1px solid #ddd;
+      padding: 10px;
       text-align: center;
-      font-size: 18px;
     }
     th {
       background: #000;
       color: white;
     }
-    .checkbox {
-      margin: 30px 0;
-      font-size: 22px;
-    }
-    input[type="checkbox"] {
-      transform: scale(1.5);
-      margin-right: 10px;
-    }
-    #congrats {
+    .done-message {
+      text-align: center;
       color: green;
       font-weight: bold;
       display: none;
       margin-top: 20px;
-      font-size: 24px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
   <h1>Daily Study Report</h1>
-  <h2>21/07/2025</h2>
+  <h2>Mon - 7/21/2025</h2>
 
-  <div class="quote">Every day is a new chance.</div>
+  <div class="quote">لا تستسلم! - Never give up!</div>
 
   <div class="checkbox">
-    <label><input type="checkbox" id="checkAll" onclick="toggleCheckboxes()"> ✔️ Mark All Done</label>
+    <label><input type="checkbox" id="checkAll" onclick="toggleCheckboxes()"> ✔️ All Done</label>
   </div>
 
   <table>
     <tr>
       <th>المهمة</th>
       <th>النوع</th>
+      <th>المادة</th>
       <th>✔️</th>
     </tr>
 
     
       <tr>
-        <td>📝 فثسف منتسمبت</td>
-        <td>📝 حل واجب</td>
+        <td>فثسف منتسمبت</td>
+        <td>حل واجب</td>
+        <td>21fdb393-3d6d-819b-a08d-eba94fa5e51f</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
       <tr>
-        <td>📝 New Assignment</td>
-        <td>📝 حل واجب</td>
+        <td>New Assignment</td>
+        <td>حل واجب</td>
+        <td>21fdb393-3d6d-819b-a08d-eba94fa5e51f</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
 
   </table>
 
-  <div id="congrats">✔️ Good Job! All Tasks Done!</div>
+  <div id="congrats" class="done-message">✔️ Good Job! All Tasks Done!</div>
 
   <script>
     function toggleCheckboxes() {
