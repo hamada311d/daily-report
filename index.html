@@ -7,19 +7,20 @@
   <script src="https://unpkg.com/feather-icons"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen p-6 font-sans">
+<body class="bg-gray-200 min-h-screen p-6 font-sans">
   <div class="max-w-3xl mx-auto">
     <header class="text-center mb-8">
       <h1 class="text-4xl font-bold text-blue-600">📋 تقرير المهام اليومية</h1>
-      <p class="mt-2 text-gray-700"> <strong>21-07-2025</strong> </p>
-      <p class="mt-4 italic text-gray-500">"كل يوم فرصة جديدة ✨"</p>
+      <p class="mt-2 text-2xl text-gray-700 font-bold"> 21-07-2025 </p>
+      <p class="mt-4 italic text-xl text-gray-600">"كل يوم فرصة جديدة ✨"</p>
     </header>
     <main>
       
-    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4 rtl:space-x-reverse mb-4 hover:shadow-lg transition">
-      <i data-feather="check-circle" class="w-6 h-6 text-gray-300 hover:text-green-500 cursor-pointer"></i>
+    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4 rtl:space-x-reverse mb-4 hover:shadow-lg transition group">
+      <i data-feather="check-circle" class="w-6 h-6 text-gray-300 hover:text-green-500 cursor-pointer" onclick="this.classList.toggle('text-green-500'); this.classList.toggle('text-gray-300'); this.parentElement.classList.toggle('bg-green-50'); this.parentElement.insertAdjacentHTML('beforeend', '<div class=&quot;w-full text-center text-green-600 font-bold&quot;>✔️ أحسنت!</div>');"></i>
       <div class="flex-1">
         <h2 class="font-semibold text-lg text-gray-800">فثسف منتسمبت</h2>
+        <p class="text-sm text-gray-500">النوع: غير محدد</p>
       </div>
       <a href="https://www.notion.so/236db3933d6d803282dff94fa49cda4c" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center space-x-1 rtl:space-x-reverse">
         <i data-feather="external-link" class="w-5 h-5"></i>
@@ -27,10 +28,11 @@
       </a>
     </div>
   
-    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4 rtl:space-x-reverse mb-4 hover:shadow-lg transition">
-      <i data-feather="check-circle" class="w-6 h-6 text-gray-300 hover:text-green-500 cursor-pointer"></i>
+    <div class="bg-white p-4 rounded-lg shadow-md flex items-center space-x-4 rtl:space-x-reverse mb-4 hover:shadow-lg transition group">
+      <i data-feather="check-circle" class="w-6 h-6 text-gray-300 hover:text-green-500 cursor-pointer" onclick="this.classList.toggle('text-green-500'); this.classList.toggle('text-gray-300'); this.parentElement.classList.toggle('bg-green-50'); this.parentElement.insertAdjacentHTML('beforeend', '<div class=&quot;w-full text-center text-green-600 font-bold&quot;>✔️ أحسنت!</div>');"></i>
       <div class="flex-1">
         <h2 class="font-semibold text-lg text-gray-800">New Assignment</h2>
+        <p class="text-sm text-gray-500">النوع: غير محدد</p>
       </div>
       <a href="https://www.notion.so/New-Assignment-235db3933d6d80679210e918c5280df0" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center space-x-1 rtl:space-x-reverse">
         <i data-feather="external-link" class="w-5 h-5"></i>
@@ -40,8 +42,6 @@
   
     </main>
   </div>
-  <script>
-    window.onload = () => feather.replace();
-  </script>
+  <script> window.onload = () => feather.replace(); </script>
 </body>
 </html>
