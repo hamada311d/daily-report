@@ -6,64 +6,58 @@
   <title>Study Report</title>
   <style>
     body {
-      background: #e8e8e8;
-      font-family: 'Arial', sans-serif;
-      padding: 30px;
+      background: #e0e0e0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
       color: #333;
     }
     h1 {
       text-align: center;
-      color: #000;
-      font-size: 36px;
-      margin: 0 0 20px 0;
+      color: #222;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
     .quote {
       text-align: center;
-      font-size: 24px;
-      color: #007BFF;
-      font-style: italic;
-      margin: 20px 0;
+      font-size: 18px;
+      color: #555;
+      font-weight: bold;
+      margin: 10px 0 20px;
     }
     .checkbox {
-      margin: 20px auto;
       text-align: center;
-      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
     table {
-      width: 90%;
-      margin: auto;
+      width: 100%;
+      background: #fff;
       border-collapse: collapse;
-      background: #f9f9f9;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     th, td {
       border: 1px solid #ddd;
-      padding: 14px;
+      padding: 10px;
       text-align: center;
-      font-size: 18px;
     }
     th {
-      background: #007BFF;
+      background: #333;
       color: white;
     }
     #congrats {
       display: none;
-      text-align: center;
-      margin-top: 20px;
-      font-size: 22px;
+      margin-top: 15px;
+      font-size: 18px;
       color: green;
+      text-align: center;
       font-weight: bold;
-    }
-    input[type="checkbox"] {
-      transform: scale(1.4);
     }
   </style>
 </head>
 <body>
 
   <h1>Mon - 21/7/2025</h1>
-
-  <div class="quote">التغيير يبدأ منك - Change starts with you 💡</div>
+  <div class="quote">التغيير يبدأ منك - Change starts with you.</div>
 
   <div class="checkbox">
     <label><input type="checkbox" id="checkAll" onclick="toggleCheckboxes()"> ✔️ All Done</label>
@@ -79,21 +73,21 @@
     
       <tr>
         <td>فثسف منتسمبت</td>
-        <td>حل واجب 📘</td>
-        <td>غير محدد</td>
+        <td>حل واجب</td>
+        <td>Arabic</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
       <tr>
         <td>New Assignment</td>
-        <td>حل واجب 📘</td>
-        <td>غير محدد</td>
+        <td>حل واجب</td>
+        <td>Arabic</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
   </table>
 
-  <div id="congrats">✔️ Good Job! All Tasks Done!</div>
+  <div id="congrats">🎉 Good Job! All Tasks Done!</div>
 
   <script>
     function toggleCheckboxes() {
