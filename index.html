@@ -1,123 +1,19 @@
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>Study Report</title>
-  <style>
-    body {
-      background: #f0f0f0;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      color: #000;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .quote {
-      text-align: center;
-      font-size: 16px;
-      color: #555;
-      font-weight: bold;
-      margin: 10px 0 20px;
-    }
-    .checkbox {
-      text-align: center;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
-    table {
-      width: 100%;
-      background: #fff;
-      border-collapse: collapse;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-    }
-    th {
-      background: #444;
-      color: white;
-    }
-    a {
-      color: #007BFF;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      margin: 5px 0;
-      padding: 0;
-      list-style: none;
-    }
-    li {
-      font-size: 12px;
-      color: #555;
-      text-align: right;
-    }
-    #congrats {
-      display: none;
-      margin-top: 15px;
-      font-size: 16px;
-      color: green;
-      text-align: center;
-      font-weight: bold;
-    }
-  </style>
-</head>
+<head><meta charset="UTF-8"><title>Study Report</title></head>
 <body>
-
-  <h1>Tue - 22/07/2025</h1>
-  <div class="quote">ابدأ الآن - Start now.</div>
-
-  <div class="checkbox">
-    <label><input type="checkbox" id="checkAll" onclick="toggleCheckboxes()"> ✔️ All Done</label>
-  </div>
-
-  <table>
+<h1>Tue 22/07/2025 - Daily Report</h1>
+<div>ابدأ الآن - Start now.</div>
+<table border="1">
+  <tr><th>المهمة</th><th>النوع</th><th>المادة</th><th>Notion</th></tr>
+  
     <tr>
-      <th>المهمة</th>
-      <th>النوع</th>
-      <th>المادة</th>
-      <th>نوشن</th>
-      <th>✔️</th>
+      <td>غير محدد</td>
+      <td>غير محدد</td>
+      <td>غير محدد</td>
+      <td><a href="" target="_blank">فتح</a></td>
     </tr>
-    
-      <tr>
-        <td>
-          غير محدد
-          
-        </td>
-        <td>غير محدد</td>
-        <td>غير محدد</td>
-        <td></td>
-        <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
-      </tr>
-    
-  </table>
-
-  <div id="congrats">🎉 Good Job! All Tasks Done!</div>
-
-  <script>
-    function toggleCheckboxes() {
-      const master = document.getElementById('checkAll');
-      document.querySelectorAll('.taskCheck').forEach(cb => cb.checked = master.checked);
-      checkAllStatus();
-    }
-
-    function checkAllStatus() {
-      const allChecked = [...document.querySelectorAll('.taskCheck')].every(cb => cb.checked);
-      document.getElementById('congrats').style.display = allChecked ? 'block' : 'none';
-    }
-  </script>
-
+</table>
 </body>
 </html>
