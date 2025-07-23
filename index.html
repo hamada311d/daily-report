@@ -2,22 +2,22 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>Study Report</title>
-  <style>
-    body { background: #f0f0f0; font-family: Arial, sans-serif; padding: 20px; color: #333; }
-    h1 { text-align: center; font-size: 24px; margin-bottom: 10px; }
-    .quote { text-align: center; font-size: 16px; margin: 10px 0 20px; font-weight: bold; color: #555; }
-    .checkbox { text-align: center; margin-bottom: 15px; font-weight: bold; }
-    table { width: 100%; background: #fff; border-collapse: collapse; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; font-size: 14px; }
-    th { background: #333; color: #fff; }
-    a { color: #007BFF; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    ul { margin: 5px 0; padding: 0; list-style: none; }
-    li { font-size: 12px; color: #555; text-align: right; }
-    #congrats { display: none; margin-top: 15px; font-size: 16px; color: green; text-align: center; font-weight: bold; }
-  </style>
+<meta charset="UTF-8">
+<title>Study Report</title>
+<style>
+  body{background:#f0f0f0;font-family:Arial;padding:20px;color:#333;}
+  h1{text-align:center;font-size:24px;margin-bottom:10px;}
+  .quote{text-align:center;font-size:16px;margin:10px 0 20px;font-weight:bold;color:#555;}
+  .checkbox{text-align:center;margin-bottom:15px;font-weight:bold;}
+  table{width:100%;background:#fff;border-collapse:collapse;box-shadow:0 0 5px rgba(0,0,0,0.1);}
+  th,td{border:1px solid #ccc;padding:10px;text-align:center;font-size:14px;}
+  th{background:#333;color:#fff;}
+  a{color:#007BFF;text-decoration:none;font-weight:bold;}
+  a:hover{text-decoration:underline;}
+  ul{margin:5px 0;padding:0;list-style:none;}
+  li{font-size:12px;color:#555;text-align:right;}
+  #congrats{display:none;margin-top:15px;font-size:16px;color:green;text-align:center;font-weight:bold;}
+</style>
 </head>
 <body>
   <h1>Wed - 23/07/2025</h1>
@@ -26,13 +26,7 @@
     <label><input type="checkbox" id="checkAll" onclick="toggleCheckboxes()"> ✔️ All Done</label>
   </div>
   <table>
-    <tr>
-      <th>المهمة</th>
-      <th>النوع</th>
-      <th>المادة</th>
-      <th>نوشن</th>
-      <th>✔️</th>
-    </tr>
+    <tr><th>المهمة</th><th>النوع</th><th>المادة</th><th>نوشن</th><th>✔️</th></tr>
     
       <tr>
         <td>
@@ -180,14 +174,14 @@
   </table>
   <div id="congrats">🎉 Good Job! All Tasks Done!</div>
   <script>
-    function toggleCheckboxes() {
-      const m = document.getElementById('checkAll');
-      document.querySelectorAll('.taskCheck').forEach(cb => cb.checked = m.checked);
+    function toggleCheckboxes(){
+      const m=document.getElementById('checkAll');
+      document.querySelectorAll('.taskCheck').forEach(cb=>cb.checked=m.checked);
       checkAllStatus();
     }
-    function checkAllStatus() {
-      const ok = [...document.querySelectorAll('.taskCheck')].every(cb => cb.checked);
-      document.getElementById('congrats').style.display = ok ? 'block' : 'none';
+    function checkAllStatus(){
+      const ok=[...document.querySelectorAll('.taskCheck')].every(cb=>cb.checked);
+      document.getElementById('congrats').style.display=ok?'block':'none';
     }
   </script>
 </body>
