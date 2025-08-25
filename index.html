@@ -17,11 +17,12 @@
     ul { margin: 5px 0; padding: 0; list-style: none; }
     li { font-size: 12px; color: #555; text-align: right; }
     #congrats { display: none; margin-top: 15px; font-size: 16px; color: green; text-align: center; font-weight: bold; }
+    .debug { font-size: 12px; color: #777; }
   </style>
 </head>
 <body>
   <h1>Mon - 25/08/2025</h1>
-  <div class="quote">العقل السليم في الجسم السليم - A healthy mind in a healthy body.</div>
+  <div class="quote">حافظ على طاقتك - Protect your energy.</div>
   <div class="checkbox">
     <label><input type="checkbox" id="checkAll" onclick="toggleCheckboxes()"> ✔️ All Done</label>
   </div>
@@ -31,6 +32,7 @@
       <th>النوع</th>
       <th>المادة</th>
       <th>نوشن</th>
+      <th>الحالة المكتشفة (Debug)</th>
       <th>✔️</th>
     </tr>
     
@@ -42,6 +44,7 @@
         <td>مذاكرة</td>
         <td>English</td>
         <td><a href="notion://www.notion.so/2-25adb3933d6d8080b0abf8ae219e5fd3" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">🟡 Needs Study</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -53,6 +56,7 @@
         <td>حل</td>
         <td>Physics</td>
         <td><a href="notion://www.notion.so/Lesson-5-Ohm-s-Law-V-IR-256db3933d6d805a87c3f156e80825bc" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">✅ All Good</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -64,6 +68,7 @@
         <td>مذاكرة</td>
         <td>Physics</td>
         <td><a href="notion://www.notion.so/Physics-Revision-Session-Intensity-P-D-Resistance-2h-255db3933d6d80c4830af49bf17e1b98" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">🟡 Needs Study</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -75,6 +80,7 @@
         <td>حل</td>
         <td>Physics</td>
         <td><a href="notion://www.notion.so/Lesson-3-Resistance-Resistivity-251db3933d6d8017a63fc57e5e9c893e" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">✅ All Good</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -86,6 +92,7 @@
         <td>مراجعة</td>
         <td>Chemistry</td>
         <td><a href="notion://www.notion.so/Session-2-Oxidation-States-24cdb3933d6d80749029f6824cf99657" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">✅ All Good</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -97,6 +104,7 @@
         <td>حل</td>
         <td>Physics</td>
         <td><a href="notion://www.notion.so/Lesson-2-Potential-Difference-24bdb3933d6d801189fbfa9270586444" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">✅ All Good</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -108,6 +116,7 @@
         <td>مراجعة</td>
         <td>Chemistry</td>
         <td><a href="notion://www.notion.so/First-Transtion-Elements-Properties-248db3933d6d8079b1c4f1cc0a595949" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">✅ All Good</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
@@ -119,6 +128,7 @@
         <td>مراجعة</td>
         <td>English</td>
         <td><a href="notion://www.notion.so/Unit-1-lesson-1-2-Vocab-246db3933d6d8040a082f993aa87cb49" target="_blank">فتح في تطبيق نوشن</a></td>
+        <td class="debug">🟤 Solve Again</td>
         <td><input type="checkbox" class="taskCheck" onclick="checkAllStatus()"></td>
       </tr>
     
